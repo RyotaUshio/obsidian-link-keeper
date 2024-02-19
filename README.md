@@ -1,6 +1,8 @@
-# Obsidian Link Keeper
-
-Auto-update links even when renaming or moving files outside of Obsidian.
+<h1 align="center">Obsidian Link Keeper</h1>
+<h3 align="center">Auto-update links even when renaming or moving files outside of Obsidian.</h3>
+<p align="center">
+<img style="align:center;" src="https://github.com/RyotaUshio/obsidian-link-keeper/assets/72342591/6b0ed1df-191f-483c-a62b-67c1d47681c3" alt="Link Keeper Demo" width="1000" />
+</p>
 
 ## Installation
 
@@ -10,6 +12,9 @@ You can install the latest release using [BRAT](https://github.com/TfTHacker/obs
 2. _(Optional but highly recommended)_ In the BRAT settings, turn on `Auto-update plugins at startup` at the top of the page.
 3. Open the following URL in your browser: `obsidian://brat?plugin=RyotaUshio/obsidian-link-keeper`.
 4. Click the "Add Plugin" button.
+
+> [!warning]
+> This plugin has not been tested on operation systems other than macOS. If you encounter any problems, let me know by [creating a new issue](https://github.com/RyotaUshio/obsidian-link-keeper/issues/new).
 
 ## Support development
 
