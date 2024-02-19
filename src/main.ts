@@ -22,7 +22,7 @@ export default class LinkKeeperPlugin extends Plugin {
 					if (oldFile.name === newFile.name // moved to a different folder
 						|| oldParent === newParent) { // renamed in the same folder
 
-						const newPath = newFile.path;
+						this.app.vault.offref(eventRef);
 
 						const previousTask = this.activeTask;
 
@@ -35,8 +35,6 @@ export default class LinkKeeperPlugin extends Plugin {
 							await previousTask;
 							try {
 								await task();
-
-								this.app.vault.offref(eventRef);
 
 								const retryFailedTasks = [];
 
