@@ -14,7 +14,7 @@ You can install the latest release using [BRAT](https://github.com/TfTHacker/obs
 4. Click the "Add Plugin" button.
 
 > [!warning]
-> This plugin has not been tested on operation systems other than macOS. If you encounter any problems, let me know by [creating a new issue](https://github.com/RyotaUshio/obsidian-link-keeper/issues/new).
+> This plugin has not been tested on operation systems other than macOS and iOS. If you encounter any problems, let me know by [creating a new issue](https://github.com/RyotaUshio/obsidian-link-keeper/issues/new).
 
 ## Support development
 
