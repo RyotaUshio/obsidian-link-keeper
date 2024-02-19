@@ -2,10 +2,8 @@ import { Plugin, TFile, TFolder, normalizePath } from 'obsidian';
 
 
 export default class LinkKeeperPlugin extends Plugin {
-	settings: LinkKeeperSettings;
-
 	activeTask: Promise<any> = Promise.resolve();
-	failedTasks: Promise<any>[] = [];
+	failedTasks: (() => Promise<any>)[] = [];
 
 	async onload() {
 		this.registerEvent(this.app.vault.on('create', (newFile) => {
@@ -19,7 +17,7 @@ export default class LinkKeeperPlugin extends Plugin {
 					const newPath = newFile.path;
 
 					const oldParent = normalizePath(oldPath.split('/').slice(0, -1).join('/')); // TFile.parent is null for a deleted file
-					const newParent = newFile.parent.path;
+					const newParent = newFile.parent?.path;
 
 					if (oldFile.name === newFile.name // moved to a different folder
 						|| oldParent === newParent) { // renamed in the same folder
@@ -44,6 +42,7 @@ export default class LinkKeeperPlugin extends Plugin {
 
 								while (this.failedTasks.length) {
 									const failedTask = this.failedTasks.shift();
+									if (!failedTask) continue;
 									try {
 										await failedTask();
 									} catch (e) {

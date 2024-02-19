@@ -1,6 +1,6 @@
 {
     "name": "obsidian-link-keeper",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "An Obsidian.md plugin to auto-update links even when renaming or moving files outside of Obsidian.",
     "scripts": {
         "dev": "node esbuild.config.mjs",
