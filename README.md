@@ -14,7 +14,8 @@ You can install the latest release using [BRAT](https://github.com/TfTHacker/obs
 4. Click the "Add Plugin" button.
 
 > [!warning]
-> **This plugin should be considered experimental**, and it has not been tested on operation systems other than macOS and iOS. If you encounter any problems, let me know by [creating a new issue](https://github.com/RyotaUshio/obsidian-link-keeper/issues/new).
+> - **This plugin should be considered experimental**, and it has not been tested on operation systems other than macOS and iOS. If you encounter any problems, let me know by [creating a new issue](https://github.com/RyotaUshio/obsidian-link-keeper/issues/new).
+> - Files must be renamed or moved while Obsidian and this plugin are running; on iPad, it is fine to rename or move files while hiding a Slide Over window where Obsidian is running.
 
 ## Support development
 
